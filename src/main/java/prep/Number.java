@@ -3,10 +3,10 @@ package prep;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PerfectNumber {
+public class Number {
   private int number;
 
-  public PerfectNumber(int number) {
+  public Number(int number) {
     this.number = number;
   }
 
