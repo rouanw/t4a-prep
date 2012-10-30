@@ -12,6 +12,16 @@ public class Classifier {
   }
 
   public List<Integer> factors() {
-    return Arrays.asList(1);
+
+    List<Integer> factors = new ArrayList<Integer>();
+    for (int i = 1; i <= number; i++) {
+      if (isFactor(i))
+        factors.add(i);
+    }
+    return factors;
+  }
+
+  private boolean isFactor(int i) {
+    return number % i == 0;
   }
 }
