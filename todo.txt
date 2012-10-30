@@ -1,3 +1,4 @@
-- can determine if a number is a factor
-- can calculate the factors of a number
-- can add them up
+- //can determine if a number is a factor
+- //can calculate the factors of a number
+- //can add them up
+- // can determine if it is a perfect number
