@@ -2,7 +2,9 @@ package prep;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Classifier {
   private int number;
@@ -15,11 +17,12 @@ public class Classifier {
     return number % divisor == 0;
   }
 
-  public List<Integer> factors() {
-    List<Integer> factors = new ArrayList<Integer>();
-    for (int i = 1; i <= number; i++) {
+  public Set<Integer> factors() {
+    Set<Integer> factors = new HashSet<Integer>();
+    for (int i = 1; i <= Math.sqrt(number); i++) {
       if (hasFactor(i)) {
         factors.add(i);
+        factors.add(number / i);
       }
     }
     return factors;
