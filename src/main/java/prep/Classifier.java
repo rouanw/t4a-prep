@@ -27,4 +27,12 @@ public class Classifier {
     }
     return factors;
   }
+
+  public int sumFactors() {
+    int sum = 0;
+    for (int factor : factors()){
+      sum += factor;
+    }
+    return sum;
+  }
 }

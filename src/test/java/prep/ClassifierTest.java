@@ -35,4 +35,16 @@ public class ClassifierTest {
     Set<Integer> factorsTwo = new Classifier(5).factors();
     assertThat(factorsOne, not(equalTo(factorsTwo)));
   }
+
+  @Test
+  public void testCanSumUpFactors(){
+    assertEquals(1 + 2 + 3 + 6, new Classifier(6).sumFactors());
+  }
+
+  @Test
+  public void testTwoSumsAreDifferent() throws Exception {
+    int firstSum = new Classifier(6).sumFactors();
+    int secondSum = new Classifier(5).sumFactors();
+    assertThat(firstSum, not(equalTo(secondSum)));
+  }
 }
