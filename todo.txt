@@ -1,4 +1,4 @@
-- can determine if a number is a factor
-- can determine the factors of a number
++ can determine if a number is a factor
++ can determine the factors of a number
 - sum up factors
 - compare with actual number
