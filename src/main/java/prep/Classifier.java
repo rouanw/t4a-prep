@@ -35,4 +35,8 @@ public class Classifier {
     }
     return sum;
   }
+
+  public boolean isPerfectNumber() {
+    return sumFactors() - number == number;
+  }
 }

@@ -47,4 +47,14 @@ public class ClassifierTest {
     int secondSum = new Classifier(5).sumFactors();
     assertThat(firstSum, not(equalTo(secondSum)));
   }
+
+  @Test
+  public void testCanDeterminePerfectNumber() throws Exception {
+    assertTrue("Six is not a perfect number but should be", new Classifier(6).isPerfectNumber());
+  }
+
+  @Test
+  public void testCanRecogniseANonPerfectNumber() throws Exception {
+    assertFalse("Five is a perfect number, but should not be", new Classifier(5).isPerfectNumber());
+  }
 }
